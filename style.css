@@ -1,0 +1,14 @@
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 960px;
+}
+
+[class*="grid-part-"] {
+    color: black;
+    height: 50px;
+    width: 50px;
+    border: 5px solid black;
+}
+
