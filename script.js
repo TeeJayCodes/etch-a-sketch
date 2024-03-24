@@ -1,3 +1,4 @@
+/* Create etch a sketch grid */
 const GRIDCONTAINER = document.createElement(`div`);
 document.body.append(GRIDCONTAINER);
 GRIDCONTAINER.classList.add(`grid-container`);
@@ -9,3 +10,8 @@ for (i = 1; i <= 256; ++i) {
     GRIDCONTAINER.appendChild(gridDivObject[i]);
 }
 
+/* Add class to grid parts when hovered over */
+let gridParts = document.querySelectorAll(`.grid-container > div`);
+gridParts.forEach(gridPart => gridPart.addEventListener('mouseenter', function () {
+    gridPart.classList.add(`filled`);
+}));
