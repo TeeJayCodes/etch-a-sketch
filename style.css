@@ -1,19 +1,24 @@
 /* Etch-a-sketch grid */
 .grid-container {
+    background-color: gray;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    max-height: 960px;
+    height: 600px;
+    width: 600px;
 }
 
+/*Individual grid squares */
 [class*="grid-part-"] {
     color: black;
-    height: 50px;
-    width: 50px;
-    border: 5px solid black;
+    border: 2px solid black;
 }
 
 /* Class to be added when hovered */
 .filled {
-    background-color: black;
+    background-color: white;
+}
+
+/* Add space between button and grid */
+button {
+    margin-bottom: 50px;
 }
