@@ -13,12 +13,8 @@
     border: 2px solid black;
 }
 
-/* Class to be added when hovered */
-.filled {
-    background-color: white;
-}
-
-/* Add space between button and grid */
+/* Add space between buttons and grid */
 button {
     margin-bottom: 50px;
+    margin-right: 50px;
 }
