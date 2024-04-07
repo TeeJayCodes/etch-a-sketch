@@ -35,6 +35,7 @@ function fillGridWithStandardColor() {
     let gridParts = document.querySelectorAll(`.grid-container > div`);
     gridParts.forEach(gridPart => gridPart.addEventListener('mouseenter', function () {
     gridPart.style.backgroundColor = `rgb(0, 0, 0)`;
+    gridPart.style.opacity = Number(gridPart.style.opacity) + .1;
     gridPart.classList.add(`filled`);
     }));
 }
@@ -46,7 +47,7 @@ randomColorsButton.textContent = `Draw with random colors`;
 document.body.insertBefore(randomColorsButton, GRIDCONTAINER);
 randomColorsButton.addEventListener(`click`, fillGridWithRandomColor);
 
-function fillGridWithRandomColor() {
+function fillGridWithRandomColor() { 
     let gridParts = document.querySelectorAll(`.grid-container > div`);
     gridParts.forEach(gridPart => gridPart.addEventListener('mouseenter', function () {
     gridPart.style.backgroundColor = rgbValue();
